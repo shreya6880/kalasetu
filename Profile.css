@@ -1,0 +1,120 @@
+/* PAGE CONTAINER */
+.profile-container {
+  min-height: 100vh;
+  padding: 40px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(to right, #eef2ff, #f8fafc);
+}
+
+/* TITLE */
+.profile-container h1 {
+  margin-bottom: 25px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* CARD */
+.profile-card {
+  background: white;
+  padding: 35px;
+  border-radius: 16px;
+
+  width: 100%;
+  max-width: 420px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  transition: 0.3s;
+}
+
+/* HOVER */
+.profile-card:hover {
+  transform: translateY(-4px);
+}
+
+/* INPUTS */
+.profile-card input,
+.profile-card textarea {
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: 0.2s;
+  background: #f9fafb;
+}
+
+/* INPUT FOCUS */
+.profile-card input:focus,
+.profile-card textarea:focus {
+  border-color: #2563eb;
+  background: white;
+  outline: none;
+}
+
+/* TEXTAREA */
+.profile-card textarea {
+  min-height: 90px;
+  resize: none;
+}
+
+/* BUTTON */
+.save-btn {
+  background: linear-gradient(to right, #2563eb, #3b82f6);
+  color: white;
+  padding: 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+/* BUTTON HOVER */
+.save-btn:hover {
+  transform: scale(1.03);
+  opacity: 0.95;
+}
+
+/* MESSAGE */
+.profile-card p {
+  text-align: center;
+  font-size: 14px;
+}
+
+/* ANIMATION */
+.profile-card {
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 📱 MOBILE */
+@media (max-width: 500px) {
+  .profile-container {
+    padding: 20px;
+  }
+
+  .profile-card {
+    padding: 20px;
+  }
+}
